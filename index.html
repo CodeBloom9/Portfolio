@@ -56,7 +56,7 @@
 </head>
 <body class="text-white antialiased bg-black">
 
-    <div id="mobile-nav" class="fixed inset-0 bg-black/60 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transform -translate-y-5 transition-all duration-500 text-center">
+    <div id="mobile-nav" class="fixed inset-0 bg-black/90 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transform -translate-y-5 transition-all duration-500 text-center">
         <button id="close-menu" class="absolute top-8 right-8 text-pink-500 uppercase tracking-widest text-xs font-bold">
             Close <span class="text-2xl">&times;</span>
         </button>
@@ -66,23 +66,23 @@
         <a href="#projects" class="logo-font text-5xl hover:text-pink-400">Projects</a>
     </div>
 
-    <section id="hero" class="hero-bg min-h-screen">
-        <nav class="relative z-50 flex items-center justify-between px-6 md:px-12 py-6 max-w-screen-2xl mx-auto w-full">
-            <div class="logo-font text-3xl md:text-4xl text-pink-500">Code Bloom</div>
-            <div class="hidden md:flex items-center gap-12 text-xs uppercase tracking-[0.3em] font-semibold text-white/60">
-                <a href="#hero">Home</a>
-                <a href="#services">Services</a>
-                <a href="#process">Process</a>
-                <a href="#projects">Projects</a>
-            </div>
-            <button id="open-menu" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
-                <span class="w-6 h-0.5 bg-pink-500"></span>
-                <span class="w-6 h-0.5 bg-white"></span>
-                <span class="w-4 h-0.5 bg-pink-500 self-end"></span>
-            </button>
-        </nav>
+    <nav class="sticky top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/5 flex items-center justify-between px-6 md:px-12 py-5 w-full">
+        <div class="logo-font text-3xl md:text-4xl text-pink-500">Code Bloom</div>
+        <div class="hidden md:flex items-center gap-12 text-xs uppercase tracking-[0.3em] font-semibold text-white/60">
+            <a href="#hero" class="hover:text-pink-500 transition-colors">Home</a>
+            <a href="#services" class="hover:text-pink-500 transition-colors">Services</a>
+            <a href="#process" class="hover:text-pink-500 transition-colors">Process</a>
+            <a href="#projects" class="hover:text-pink-500 transition-colors">Projects</a>
+        </div>
+        <button id="open-menu" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+            <span class="w-6 h-0.5 bg-pink-500"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-4 h-0.5 bg-pink-500 self-end"></span>
+        </button>
+    </nav>
 
-        <main class="flex-grow flex flex-col items-center justify-center text-center px-6">
+    <section id="hero" class="hero-bg min-h-screen flex items-center justify-center">
+        <main class="text-center px-6">
             <h1 class="text-5xl md:text-8xl serif-font leading-tight mb-6">
                 Full Stack <span class="italic text-pink-400">Developer</span>
             </h1>
@@ -92,7 +92,6 @@
         </main>
     </section>
 
-    <!--Services-->
     <section id="services" class="pink-gradient-bg min-h-screen py-20 flex flex-col justify-center">
         <div class="max-w-6xl mx-auto px-6 w-full">
             <div class="mb-12">
@@ -134,220 +133,188 @@
         </div>
     </section>
 
-
     <section id="process" class="bg-[#050505] min-h-screen py-20 flex flex-col justify-center">
-    <div class="max-w-7xl mx-auto px-6 w-full flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
-        
-        <div class="w-full lg:w-1/3 lg:sticky lg:top-24">
-            <h2 class="text-4xl md:text-6xl serif-font mb-8">How I Bring <br><span class="text-pink-500 italic">Websites to Life</span></h2>
-            <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
-                <img src="images/home-image2.jpg" class="w-full h-full object-cover grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-700" alt="Creative Process">
+        <div class="max-w-7xl mx-auto px-6 w-full flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/3 lg:sticky lg:top-24">
+                <h2 class="text-4xl md:text-6xl serif-font mb-8">How I Bring <br><span class="text-pink-500 italic">Websites to Life</span></h2>
+                <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
+                    <img src="images/home-image2.jpg" class="w-full h-full object-cover grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-700" alt="Creative Process">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                    <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
+                        <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">01. Discover</h4>
+                        <h3 class="text-xl text-white mt-2 mb-3 serif-font">Discover & Understand</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">I start by talking with clients to clearly understand their goals, audience, and the problem the website needs to solve.</p>
+                    </div>
+                    <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
+                        <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">02. Design</h4>
+                        <h3 class="text-xl text-white mt-2 mb-3 serif-font">Plan & Design</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">I create wireframes and detailed mockups in Figma to map out the structure and user experience before development begins.</p>
+                    </div>
+                    <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
+                        <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">03. Build</h4>
+                        <h3 class="text-xl text-white mt-2 mb-3 serif-font">Develop the Website</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">Once the design is approved, I translate visuals into clean, responsive code using the most suitable technologies.</p>
+                    </div>
+                    <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
+                        <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">04. Quality</h4>
+                        <h3 class="text-xl text-white mt-2 mb-3 serif-font">Debug & Test</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">I thoroughly test across devices and browsers, fixing issues and optimizing performance to ensure smooth operation.</p>
+                    </div>
+                    <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
+                        <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">05. Launch</h4>
+                        <h3 class="text-xl text-white mt-2 mb-3 serif-font">Deploy & Launch</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">I secure a personalized domain and deploy the website so it is fast, live, and accessible to your users immediately.</p>
+                    </div>
+                    <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
+                        <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">06. Growth</h4>
+                        <h3 class="text-xl text-white mt-2 mb-3 serif-font">Continuous Support</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">Even after launch, I remain available for updates, improvements, and ongoing support to keep things performing at their best.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="w-full lg:w-2/3">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
-                
-                <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
-                    <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">01. Discover</h4>
-                    <h3 class="text-xl text-white mt-2 mb-3 serif-font">Discover & Understand</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">I start by talking with clients to clearly understand their goals, audience, and the problem the website needs to solve.</p>
+    <section class="pink-gradient-bg py-6 overflow-hidden border-y border-white/10">
+        <div class="relative flex overflow-x-hidden">
+            <div class="flex whitespace-nowrap gap-12 items-center animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused] cursor-default">
+                <div class="flex items-center gap-12">
+                    <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
+                    <span class="text-black/20 text-4xl">****</span>
+                    <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
+                    <span class="text-black/20 text-4xl">****</span>
+                    <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
+                    <span class="text-black/20 text-4xl">****</span>
                 </div>
-
-                <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
-                    <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">02. Design</h4>
-                    <h3 class="text-xl text-white mt-2 mb-3 serif-font">Plan & Design</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">I create wireframes and detailed mockups in Figma to map out the structure and user experience before development begins.</p>
+                <div class="flex items-center gap-12">
+                    <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
+                    <span class="text-black/20 text-4xl">****</span>
+                    <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
+                    <span class="text-black/20 text-4xl">***8</span>
+                    <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
+                    <span class="text-black/20 text-4xl">****</span>
                 </div>
-
-                <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
-                    <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">03. Build</h4>
-                    <h3 class="text-xl text-white mt-2 mb-3 serif-font">Develop the Website</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Once the design is approved, I translate visuals into clean, responsive code using the most suitable technologies.</p>
-                </div>
-
-                <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
-                    <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">04. Quality</h4>
-                    <h3 class="text-xl text-white mt-2 mb-3 serif-font">Debug & Test</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">I thoroughly test across devices and browsers, fixing issues and optimizing performance to ensure smooth operation.</p>
-                </div>
-
-                <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
-                    <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">05. Launch</h4>
-                    <h3 class="text-xl text-white mt-2 mb-3 serif-font">Deploy & Launch</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">I secure a personalized domain and deploy the website so it is fast, live, and accessible to your users immediately.</p>
-                </div>
-
-                <div class="border-l border-white/10 pl-6 hover:border-pink-500 transition-all group">
-                    <h4 class="text-pink-500 text-xs uppercase font-bold tracking-[0.3em] group-hover:translate-x-2 transition-transform">06. Growth</h4>
-                    <h3 class="text-xl text-white mt-2 mb-3 serif-font">Continuous Support</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Even after launch, I remain available for updates, improvements, and ongoing support to keep things performing at their best.</p>
-                </div>
-
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!--Small Strip-->
-<section class="pink-gradient-bg py-6 overflow-hidden border-y border-white/10">
-    <div class="relative flex overflow-x-hidden">
-        
-        <div class="flex whitespace-nowrap gap-12 items-center animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused] cursor-default">
-            
-            <div class="flex items-center gap-12">
-                <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
-                <span class="text-black/20 text-4xl">****</span>
-                <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
-                <span class="text-black/20 text-4xl">****</span>
-                <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
-                <span class="text-black/20 text-4xl">****</span>
-            </div>
-
-            <div class="flex items-center gap-12">
-                <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
-                <span class="text-black/20 text-4xl">****</span>
-                <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
-                <span class="text-black/20 text-4xl">***8</span>
-                <span class="serif-font text-3xl md:text-5xl text-white uppercase tracking-tighter">Featured Projects</span>
-                <span class="text-black/20 text-4xl">****</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-    <!--Projects-->
-<section id="projects" class="bg-black py-16">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
-            
-            <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
-                <div class="relative aspect-video overflow-hidden">
-                    <img src="https://codebloom9.github.io/Beauty-Shop/images/home-hero-image.jpg" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-5">
-                    <h3 class="serif-font text-xl text-white mb-4">Beauty Shop Website</h3>
-                    <div class="flex items-center gap-4">
-                        <a href="https://codebloom9.github.io/Beauty-Shop/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
-                        <a href="https://github.com/CodeBloom9/Beauty-Shop" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+    <section id="projects" class="bg-black py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+                <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://codebloom9.github.io/Beauty-Shop/images/home-hero-image.jpg" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="serif-font text-xl text-white mb-4">Beauty Shop Website</h3>
+                        <div class="flex items-center gap-4">
+                            <a href="https://codebloom9.github.io/Beauty-Shop/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
+                            <a href="https://github.com/CodeBloom9/Beauty-Shop" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
-                <div class="relative aspect-video overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1200" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-5">
-                    <h3 class="serif-font text-xl text-white mb-4">Pet Shop Landing Page</h3>
-                    <div class="flex items-center gap-4">
-                        <a href="https://codebloom9.github.io/Pet-Grooming-Services/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
-                        <a href="https://github.com/CodeBloom9/Pet-Grooming-Services" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1200" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="serif-font text-xl text-white mb-4">Pet Shop Landing Page</h3>
+                        <div class="flex items-center gap-4">
+                            <a href="https://codebloom9.github.io/Pet-Grooming-Services/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
+                            <a href="https://github.com/CodeBloom9/Pet-Grooming-Services" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
-                <div class="relative aspect-video overflow-hidden">
-                    <img src="https://codebloom9.github.io/Wedding-Website/images/index-photo.webp" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-5">
-                    <h3 class="serif-font text-xl text-white mb-4">Wedding Brochure Website</h3>
-                    <div class="flex items-center gap-4">
-                        <a href="https://codebloom9.github.io/Wedding-Website/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
-                        <a href="https://github.com/CodeBloom9/Wedding-Website" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://codebloom9.github.io/Wedding-Website/images/index-photo.webp" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="serif-font text-xl text-white mb-4">Wedding Brochure Website</h3>
+                        <div class="flex items-center gap-4">
+                            <a href="https://codebloom9.github.io/Wedding-Website/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
+                            <a href="https://github.com/CodeBloom9/Wedding-Website" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
-                <div class="relative aspect-video overflow-hidden">
-                    <img src="https://codebloom9.github.io/Nursing-Home/images/home-hero-image.jpg" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-5">
-                    <h3 class="serif-font text-xl text-white mb-4">Nursing home Landing Page</h3>
-                    <div class="flex items-center gap-4">
-                        <a href="https://codebloom9.github.io/Nursing-Home/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
-                        <a href="https://github.com/CodeBloom9/Nursing-Home" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                <div class="lg:col-span-2 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/5 hover:border-pink-500/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://codebloom9.github.io/Nursing-Home/images/home-hero-image.jpg" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="serif-font text-xl text-white mb-4">Nursing home Landing Page</h3>
+                        <div class="flex items-center gap-4">
+                            <a href="https://codebloom9.github.io/Nursing-Home/" class="text-[10px] uppercase tracking-widest font-bold text-pink-500 hover:text-white transition-colors">Live Site</a>
+                            <a href="https://github.com/CodeBloom9/Nursing-Home" class="text-[10px] uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="lg:col-span-4 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition-all duration-300">
-                <div class="flex flex-col lg:flex-row h-full">
-                    <div class="lg:w-3/5 relative aspect-video lg:aspect-auto overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800" alt="Featured Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    </div>
-                    <div class="lg:w-2/5 p-8 flex flex-col justify-center">
-                        <h3 class="serif-font text-3xl text-white mb-4">Event Planning Website</h3>
-                        <p class="text-white/50 text-sm mb-6 leading-relaxed">A beautiful landing page for an event's planning company with responsive design and interactive elements.</p>
-                        <div class="flex items-center gap-6">
-                            <a href="https://codebloom9.github.io/Event-Planner/" class="text-xs uppercase tracking-widest font-bold text-white border-b border-pink-500 pb-1 hover:text-pink-500 transition-colors">View Project</a>
-                            <a href="https://github.com/CodeBloom9/Event-Planner" class="text-xs uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">Source Code</a>
+                <div class="lg:col-span-4 group bg-zinc-900/40 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition-all duration-300">
+                    <div class="flex flex-col lg:flex-row h-full">
+                        <div class="lg:w-3/5 relative aspect-video lg:aspect-auto overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800" alt="Featured Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="lg:w-2/5 p-8 flex flex-col justify-center">
+                            <h3 class="serif-font text-3xl text-white mb-4">Event Planning Website</h3>
+                            <p class="text-white/50 text-sm mb-6 leading-relaxed">A beautiful landing page for an event's planning company with responsive design and interactive elements.</p>
+                            <div class="flex items-center gap-6">
+                                <a href="https://codebloom9.github.io/Event-Planner/" class="text-xs uppercase tracking-widest font-bold text-white border-b border-pink-500 pb-1 hover:text-pink-500 transition-colors">View Project</a>
+                                <a href="https://github.com/CodeBloom9/Event-Planner" class="text-xs uppercase tracking-widest font-bold text-white/40 hover:text-white transition-colors">Source Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<!--Footer-->
-<section id="footer" class="pink-gradient-bg relative pt-20 pb-10 overflow-hidden">
-    
-    <div class="absolute inset-0 z-0">
-        <img src="images/purple.jpg" alt="Blooming Flowers" class="w-full h-full object-cover mix-blend-overlay opacity-30">
-        
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-pink-600/20 to-pink-900/40"></div>
-    </div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-6">
-        
-        <div class="flex flex-col md:flex-row justify-between items-start gap-12 border-b border-black/10 pb-16">
-            
-            <div class="max-w-xs">
-                <div class="logo-font text-5xl text-white mb-4">Code Bloom</div>
-                <p class="text-black/70 text-xs leading-relaxed tracking-widest uppercase font-bold">
-                    Transforming ideas into digital blossoms through clean code and intentional design.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-2 gap-x-12 md:gap-x-20 gap-y-6">
-                <div class="flex flex-col gap-4">
-                    <span class="text-[10px] uppercase tracking-[0.3em] text-white font-black">Explore</span>
-                    <a href="#hero" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">Home</a>
-                    <a href="#services" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">Services</a>
+    <footer id="footer" class="pink-gradient-bg relative pt-20 pb-10 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/purple.jpg" alt="Blooming Flowers" class="w-full h-full object-cover mix-blend-overlay opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-pink-600/20 to-pink-900/40"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 border-b border-black/10 pb-16">
+                <div class="max-w-xs">
+                    <div class="logo-font text-5xl text-white mb-4">Code Bloom</div>
+                    <p class="text-black/70 text-xs leading-relaxed tracking-widest uppercase font-bold">
+                        Transforming ideas into digital blossoms through clean code and intentional design.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-x-12 md:gap-x-20 gap-y-6">
+                    <div class="flex flex-col gap-4">
+                        <span class="text-[10px] uppercase tracking-[0.3em] text-white font-black">Explore</span>
+                        <a href="#hero" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">Home</a>
+                        <a href="#services" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">Services</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-[10px] uppercase tracking-[0.3em] text-white font-black">Portfolio</span>
+                        <a href="#process" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">The Process</a>
+                        <a href="#projects" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">Projects</a>
+                    </div>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <span class="text-[10px] uppercase tracking-[0.3em] text-white font-black">Portfolio</span>
-                    <a href="#process" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">The Process</a>
-                    <a href="#projects" class="text-sm text-black/60 hover:text-white transition-all duration-300 font-semibold">Projects</a>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-white font-black">Connection</span>
+                    <a href="marvelwriters2021@gmail.com" class="serif-font text-3xl text-black hover:text-white transition-colors leading-none">Say Hello.</a>
+                    <div class="flex gap-4 mt-4">
+                        <a href="https://github.com/CodeBloom9/" class="text-[10px] uppercase tracking-widest text-black/60 hover:text-white transition-colors font-bold">GitHub</a>
+                        <span class="text-black/20">•</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="flex flex-col gap-4">
-                <span class="text-[10px] uppercase tracking-[0.3em] text-white font-black">Connection</span>
-                <a href="mailto:hello@codebloom.com" class="serif-font text-3xl text-black hover:text-white transition-colors leading-none">Say Hello.</a>
-                <div class="flex gap-4 mt-4">
-                    <a href="https://github.com/CodeBloom9/" class="text-[10px] uppercase tracking-widest text-black/60 hover:text-white transition-colors font-bold">GitHub</a>
-                    <span class="text-black/20">•</span>
+            <div class="flex flex-col md:flex-row justify-between items-center mt-10 gap-4 text-[9px] uppercase tracking-[0.4em] text-black/40 font-bold">
+                <p>© 2026 Code Bloom Portfolio</p>
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-[1px] bg-black/20"></span>
+                    <p>Over Here, We Love Pink and Lots of Creativity</p>
                 </div>
             </div>
         </div>
-
-        <div class="flex flex-col md:flex-row justify-between items-center mt-10 gap-4 text-[9px] uppercase tracking-[0.4em] text-black/40 font-bold">
-            <p>© 2026 Code Bloom Portfolio</p>
-            <div class="flex items-center gap-2">
-                <span class="w-8 h-[1px] bg-black/20"></span>
-                <p>Over Here, We Love Pink and Lots of Creativity</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </footer>
     
     <script>
         const openBtn = document.getElementById('open-menu');
